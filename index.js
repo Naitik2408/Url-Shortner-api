@@ -15,7 +15,7 @@ const PORT = 8000;
 
 
 const corsOption = {
-  origin: "https://short-url-azure.vercel.app",
+  origin: "https://url-shortner-red-gamma.vercel.app/",
   // origin: "http://localhost:5173",
   methods: "GET, POST, PUT, DELETE, PATCH, HEAD",
   credentials: true,
