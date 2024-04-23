@@ -17,7 +17,6 @@ async function handleGenerateNewShortURL(req, res) {
 }
 
 
-
 async function handleGetAnalytics(req, res){
   const shortId = req.params.shortId;
   const result = await URL.findOne({shortId});
@@ -27,28 +26,6 @@ async function handleGetAnalytics(req, res){
   })
 }
 
-
-
-// async function hadleGetAllUrl(req, res){
-//   if(!req.user){
-//     const obj = {resStatus: false, message:"you are not logged in"}
-//     return res.json(obj);
-//   }
-//   // console.log(req.user);
-
-//   const user = await User.find({_id : req.user._id})
-//   console.log(user);
-//   const userObj = {
-//     _id: user._id,
-//     name: user.username,
-//     email: user.email
-//   }
-
-
-//   const data = await URL.find({createdBy: userObj});
-//   const obj = {resStatus: true, message: 'all url fetched successfully', data: data, user: userObj};
-//   return res.json(obj);
-// }
 
 async function hadleGetAllUrl(req, res){
   try {
