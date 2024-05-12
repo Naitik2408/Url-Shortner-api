@@ -15,7 +15,7 @@ const PORT = 8000;
 
 
 const corsOption = {
-  origin: ["https://www.n2r.store", "http://localhost:5173"],
+  origin: ["https://www.n2r.store", "http://localhost:5173" ],
   methods: "GET, POST, PUT, DELETE, PATCH, HEAD",
   credentials: true,
 }
